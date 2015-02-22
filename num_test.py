@@ -40,7 +40,7 @@ def main():
     s_t_out = time.ctime()
 
     s = s_t_out.split()
-    out_filename = 'result' + '_' + s[1] + '_' + s[2] + '_' + s[4] + '_' + s[3][:2]
+    out_filename = 'data/result' + '_' + s[1] + '_' + s[2] + '_' + s[4] + '_' + s[3][:2]
     fout = open(out_filename, 'w')
 
     print(" ============================================================")
