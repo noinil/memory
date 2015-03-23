@@ -2,7 +2,7 @@
   Very simple memory test tools written in python.
 
 
-* Number Mnemonic List
+** Number Mnemonic List
 
 |----+----------+----+----------+----+----------+-----+----------|
 |  1 | 火车     |  2 | 天鹅     |  3 | 山       |   4 | 钱       |
@@ -33,7 +33,7 @@
 |----+----------+----+----------+----+----------+-----+----------|
 
 
-* Kana Test
+** Kana Test
 
 |--------+----------+----------|
 | romaji | hiragana | katakana |
