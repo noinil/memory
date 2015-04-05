@@ -26,7 +26,7 @@ def main():
     t0 = time.time()
     t1 = t0
     t_log = {}                  # time log
-    for i in nums:
+    for i in nums[:30]:
         key_in = input(" " + str(i) + "\t")
         t2 = time.time()
         dt = t2 - t1
