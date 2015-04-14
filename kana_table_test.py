@@ -9,6 +9,8 @@ def num_permuts(N):
     """Permutation of 0 -- 46
     """
     from random import shuffle as shf
+    from random import seed
+    seed()
     a = [i for i in range(N)]
     shf(a)
     return a[:]
@@ -83,9 +85,9 @@ def main(ts):
         print(num, "\t", romaji[num], "  \t", hiragana[num], " \t", katakana[num], " \t", t, "s")
         fout.write(romaji[num].rjust(4) + ' \t')
         fout.write(str(hiragana[num]).ljust(4) + ' \t')
-        fout.write(str(katakana[num]).ljust(4) + ' \t' + str(t) + ' s\n')
+        fout.write(str(katakana[num]).ljust(4) + ' \t' + str(t).rjust(6) + ' s\n')
     print(" ============================================================")
-    fout.write(" ============================================================")
+    fout.write(" ============================================================\n")
 
 
 if __name__ == '__main__':

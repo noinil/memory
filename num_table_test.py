@@ -4,6 +4,8 @@ def num_permuts():
     """Permutation of 01 -- 100
     """
     from random import shuffle as shf
+    from random import seed
+    seed()
     a = [i + 1 for i in range(100)]
     shf(a)
     return a[:]
@@ -57,9 +59,9 @@ def main():
         num, t = i[0], i[1]
         print(num, "\t", abracadabra[num], "     \t", t, "s")
         fout.write(str(num).rjust(4) + ' \t')
-        fout.write(str(abracadabra[num]).ljust(5) + '    \t' + str(t) + ' s\n')
+        fout.write(str(abracadabra[num]).ljust(5) + '    \t' + str(t).rjust(6) + ' s\n')
     print(" ============================================================")
-    fout.write(" ============================================================")
+    fout.write(" ============================================================\n")
 
 if __name__ == '__main__':
     main()
