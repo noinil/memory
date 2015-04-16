@@ -47,22 +47,26 @@ def main():
     print(" ------------------------------------------------------------")
 
     fout.write(" ============================================================\n")
-    fout.write(" You spent " + str(round(dt1 + dt2)) + " seconds totally. \n")
+    fout.write(" You spent " + str(round(dt1 + dt2)) + " seconds on ")
+    fout.write(str(len(nums)) + " numbers. \n")
     fout.write(" ------------------------------------------------------------\n")
 
     # Analyze the results ------------------------------------------------------
     print(" The correct answer is:", nums)
     print(' Learning time: ' + str(round(dt1, 2)).rjust(6) + ' s')
     print(' Recall time:   ' + str(round(dt2, 2)).rjust(6) + ' s')
-    fout.write(' Length of list:' + str(len(nums)).rjust(6) + '\n')
+    fout.write(" The correct answer is: \n " + nums + "\n")
+    fout.write(" ------------------------------ \n")
     fout.write(' Learning time: ' + str(round(dt1, 2)).rjust(6) + ' s\n')
     fout.write(' Recall time:   ' + str(round(dt2, 2)).rjust(6) + ' s\n')
+    fout.write(" ------------------------------ \n")
     if recall_seq == nums:
         print(" You succeeded!  Congratulations!")
         fout.write(' WIN!  Your answer is correct!  Congratulations!\n')
     else:
         print(" Your answer is incorrect!  You are stupid.")
-        fout.write(" LOSE!  Your answer is incorrect!  You are stupid.")
+        fout.write(" Your answer is: \n " + recall_seq + "\n")
+        fout.write(" LOSE!  Your answer is incorrect!  You are stupid.\n")
     print(" ============================================================")
     fout.write(" ============================================================\n")
 
